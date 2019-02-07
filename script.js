@@ -19,23 +19,22 @@ function generateWelcomeMessage() {
 function yourAnswer() {
     let answer = document.getElementById("answer").value
     let output = document.getElementById("output")
-    if (name === undefined) {
+    let correctAnswer = answers[qustionNumber]
+
+    if(name === undefined) {
         name = answer
         output.innerHTML =  output.innerHTML + "</br></br>" + "Welcome " + name + "! You have " + health + " health."
         output.innerHTML =  output.innerHTML + "</br></br>" + "You enter the courtyard and look around. You are surrounded by a high wall and there is a door at the end of the yard. A man gaurds the door. Do you want to fight the name or sneak round."
         setUpInfo()
-      } else  if (inQuestion) {
-      let correctAnswer = answers[qustionNumber]
-      if (answer.toLowerCase() === correctAnswer) {
+    } else if(inQuestion && answer.toLowerCase() === correctAnswer) {
         output.innerHTML =  output.innerHTML + "</br></br>" + "You beat the man in a fight!"
         qustionNumber++
         inQuestion = false
-      } else {
+    } else if(inQuestion && answer.toLowerCase() !== correctAnswer) {
         output.innerHTML =  output.innerHTML + "</br></br>" + "You tried to fight the man but he is too strong..."
         health = health - 20
         setUpInfo()
         inQuestion = false
-      }
     } else if (answer.toLowerCase() === 'fight') {
       inQuestion = true
       output.innerHTML =  output.innerHTML + "</br></br>" + "You have chosen to fight the man. You must answer a question correctly to beat him."
