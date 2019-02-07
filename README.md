@@ -18,7 +18,7 @@ Currently running on: http://rosiekwatson.co.uk/
 
 
 ### programming constructs
-- [ ] Remove nesting of if statements
+- [x] Remove nesting of if statements
 - [ ] Loops (while and for) - maybe for incorrect answer, maybe another for level uppping, maybe for checking health levels
 - [ ] Use comparisons (and ands and ors)
 - [x] Data structures: change objects to arrays
