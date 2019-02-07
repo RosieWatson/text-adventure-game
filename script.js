@@ -3,17 +3,9 @@ let health = 100
 let inQuestion = false
 let round = 0
 let qustionNumber = 0
-let roundDescriptions = [
-  {
-    description: ''
-  }
-]
-let questions = [
-    {
-        question: "What is the capital of England?",
-        answer: "london"
-    }
-]
+let roundDescriptions = ["Something for the first round"]
+let questions = ["What is the capital of England?"]
+let answers = ["london"]
 
 window.onload = function() {
   generateWelcomeMessage()
@@ -33,7 +25,7 @@ function yourAnswer() {
         output.innerHTML =  output.innerHTML + "</br></br>" + "You enter the courtyard and look around. You are surrounded by a high wall and there is a door at the end of the yard. A man gaurds the door. Do you want to fight the name or sneak round."
         setUpInfo()
       } else  if (inQuestion) {
-      let correctAnswer = questions[qustionNumber].answer
+      let correctAnswer = answers[qustionNumber]
       if (answer.toLowerCase() === correctAnswer) {
         output.innerHTML =  output.innerHTML + "</br></br>" + "You beat the man in a fight!"
         qustionNumber++
@@ -47,7 +39,7 @@ function yourAnswer() {
     } else if (answer.toLowerCase() === 'fight') {
       inQuestion = true
       output.innerHTML =  output.innerHTML + "</br></br>" + "You have chosen to fight the man. You must answer a question correctly to beat him."
-      output.innerHTML =  output.innerHTML + "</br></br>" + questions[qustionNumber].question
+      output.innerHTML =  output.innerHTML + "</br></br>" + questions[qustionNumber]
     } else if (answer.toLowerCase() === 'sneak') {
       output.innerHTML =  output.innerHTML + "</br></br>" + "You have snuck around the man."
     } else {

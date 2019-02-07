@@ -13,7 +13,7 @@ Currently running on: http://rosiekwatson.co.uk/
 - [ ] Do comments
 - [ ] 3 questions, looping if they get it wrong
 - [ ] More options than just sneak (think of what else it could do)
-- [ ] Change all to old function layout
+- [x] Change all to old function layout
 - [x] Change fieldsets to divs
 
 
@@ -21,4 +21,4 @@ Currently running on: http://rosiekwatson.co.uk/
 - [ ] Remove nesting of if statements
 - [ ] Loops (while and for) - maybe for incorrect answer, maybe another for level uppping, maybe for checking health levels
 - [ ] Use comparisons (and ands and ors)
-- [ ] Data structures: change objects to arrays
+- [x] Data structures: change objects to arrays
