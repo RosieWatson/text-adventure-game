@@ -6,7 +6,7 @@ Currently running on: http://rosiekwatson.co.uk/
 ### Disclaimers:
 - Stylesheet has been kept in HTML as this is the format required for the project.
 - ES5 style functions as this is the format they are being taught.
-- There are a few minor mistakes left in (such as input box not clearing) to allow them to improve upon this design.
+- There are a few minor mistakes left in (such as input box not clearing) to allow the students to improve upon this design.
 
 ## Todo:
 - [ ] Break into functions

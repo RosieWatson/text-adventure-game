@@ -12,7 +12,7 @@
         background-image: url("background.jpg");
         background-size: cover;
     }
-    fieldset {
+    div {
         background-color: lightgray;
         border-color: #C54A3E;
         font-size: 16px;
@@ -33,22 +33,22 @@
 </head>
   <body>
     <h1>Text Adventure</h1>
-    <fieldset id="infoContainer" class="infoContainer">
+    <div id="infoContainer" class="infoContainer">
         <legend>Info</legend>
         <div id="name" name="name"></div>
         <div id="health" name="health"></div>
-    </fieldset>
+    </div>
     <br/>
-    <fieldset id="outputContainer" class="outputContainer">
+    <div id="outputContainer" class="outputContainer">
         <legend>Screen</legend>
         <div id="output" name="output"></div>
-    </fieldset>
+    </div>
     <br/>
-    <fieldset>
+    <div>
         <legend>Controller</legend>
         <label for="answer">Answer:</label>
         <input type="text" id="answer" value="" />
         <input type="button" id="button" onclick="yourAnswer()" value="Submit" /><br />
-    </fieldset>  
+    </div>
   </body>
 </html>
