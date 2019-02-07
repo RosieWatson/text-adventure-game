@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Game</title>
+    <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/color/48/000000/spyro.png"/>
+    <script type="text/javascript" src="./script.js"></script>
+    <style>
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    body {
+        background-image: url("background.jpg");
+        background-size: cover;
+    }
+    fieldset {
+        background-color: lightgray;
+        border-color: #C54A3E;
+        font-size: 16px;
+    }
+    legend {
+        background-color: #A1342B;
+        color: white;
+    }
+    #button {
+
+        border: 2px solid #C54A3E;
+    }
+    .infoContainer {
+        display: none;
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+</head>
+  <body>
+    <h1>Text Adventure</h1>
+    <fieldset id="infoContainer" class="infoContainer">
+        <legend>Info</legend>
+        <div id="name" name="name"></div>
+        <div id="health" name="health"></div>
+    </fieldset>
+    <br/>
+    <fieldset id="outputContainer" class="outputContainer">
+        <legend>Screen</legend>
+        <div id="output" name="output"></div>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <legend>Controller</legend>
+        <label for="answer">Answer:</label>
+        <input type="text" id="answer" value="" />
+        <input type="button" id="button" onclick="yourAnswer()" value="Submit" /><br />
+    </fieldset>  
+  </body>
+</html>
