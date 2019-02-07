@@ -15,16 +15,16 @@ let questions = [
     }
 ]
 
-window.onload = () => {
+window.onload = function() {
   generateWelcomeMessage()
 }
 
-generateWelcomeMessage = () => {
+function generateWelcomeMessage() {
   let output = document.getElementById("output")
   output.innerHTML = "Hello player! Please enter your character name:"
 }
 
-yourAnswer = () => {
+function yourAnswer() {
     let answer = document.getElementById("answer").value
     let output = document.getElementById("output")
     if (name === undefined) {
@@ -55,7 +55,7 @@ yourAnswer = () => {
     }
 }
 
-setUpInfo = () => {
+function setUpInfo() {
   document.getElementById("infoContainer").style.display = "block"
   document.getElementById("name").innerHTML = "Name: " + name
   document.getElementById("health").innerHTML = "Health: " + health

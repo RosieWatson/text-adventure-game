@@ -14,7 +14,7 @@ Currently running on: http://rosiekwatson.co.uk/
 - [ ] 3 questions, looping if they get it wrong
 - [ ] More options than just sneak (think of what else it could do)
 - [ ] Change all to old function layout
-- [ ] Change fieldsets to divs
+- [x] Change fieldsets to divs
 
 
 ### programming constructs
