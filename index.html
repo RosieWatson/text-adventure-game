@@ -11,8 +11,9 @@
     body {
         background-image: url("background.jpg");
         background-size: cover;
+        padding: 10px 35px;
     }
-    div {
+    fieldset {
         background-color: lightgray;
         border-color: #C54A3E;
         font-size: 16px;
@@ -22,10 +23,9 @@
         color: white;
     }
     #button {
-
         border: 2px solid #C54A3E;
     }
-    .infoContainer {
+    #infoContainer {
         display: none;
     }
     </style>
@@ -33,22 +33,22 @@
 </head>
   <body>
     <h1>Text Adventure</h1>
-    <div id="infoContainer" class="infoContainer">
+    <fieldset id="infoContainer">
         <legend>Info</legend>
-        <div id="name" name="name"></div>
-        <div id="health" name="health"></div>
-    </div>
+        <div id="name"></div>
+        <div id="health"></div>
+    </fieldset>
     <br/>
-    <div id="outputContainer" class="outputContainer">
+    <fieldset id="outputContainer">
         <legend>Screen</legend>
-        <div id="output" name="output"></div>
-    </div>
+        <div id="output"></div>
+    </fieldset>
     <br/>
-    <div>
+    <fieldset>
         <legend>Controller</legend>
         <label for="answer">Answer:</label>
-        <input type="text" id="answer" value="" />
-        <input type="button" id="button" onclick="yourAnswer()" value="Submit" /><br />
-    </div>
+        <input type="text" id="answer" value=""/>
+        <input type="button" id="button" onclick="yourAnswer()" value="Submit"/>
+    </fieldset>
   </body>
 </html>
