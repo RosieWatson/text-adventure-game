@@ -22,3 +22,7 @@ Currently running on: http://rosiekwatson.co.uk/
 - [ ] Loops (while and for) - maybe for incorrect answer, maybe another for level uppping, maybe for checking health levels
 - [ ] Use comparisons (and ands and ors)
 - [x] Data structures: change objects to arrays
+
+### Ideas
+- [ ] Maybe use it as the 3rd option, pick a number and loop through for something? 
+- [ ] Split out optional CSS so it looks less cluttered
