@@ -12,18 +12,17 @@ Currently running on: http://rosiekwatson.co.uk/
 - [X] Break into functions
 - [X] Do comments
 - [X] 3 questions
-- [ ] More options than just sneak (think of what else it could do)
+- [ ] Improve sneak option?
 - [x] Change all to old function layout
 - [x] Change fieldsets to divs
 
-
 ### programming constructs
 - [x] Remove nesting of if statements
-- [ ] Loops (while and for) - maybe for incorrect answer, maybe another for level uppping, maybe for checking health levels
-- [ ] Use comparisons (and ands and ors)
+- [x] Loops (while and for) - maybe for incorrect answer, maybe another for level uppping, maybe for checking health levels
+- [x] Use comparisons (and ands and ors)
 - [x] Data structures: change objects to arrays
 
 ### Ideas
-- [ ] Maybe use it as the 3rd option, pick a number and loop through for something? 
+- [ ] Maybe use it as the 3rd option
 - [ ] Split out optional CSS so it looks less cluttered
 - [ ] Maybe have a function per round to make it simpler and also make loop usage easier?

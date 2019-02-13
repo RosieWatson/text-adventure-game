@@ -62,7 +62,7 @@ function inputText() {
     } else if (answer.toLowerCase() === 'fight' || answer.toLowerCase() === 'befriend' || answer.toLowerCase() === 'jump') {
       askQuestion()
     } else if (answer.toLowerCase() === 'sneak' || answer.toLowerCase() === 'ignore' || answer.toLowerCase() === 'turn around') {
-      output.innerHTML =  output.innerHTML + "</br></br>" + "Thank you for playing."
+      output.innerHTML =  output.innerHTML + "</br></br>" + "Thanks for playing! Goodbye."
     } else {
       alert('Sorry I did not understand your answer, please try again!')
     }
@@ -74,7 +74,11 @@ function inputText() {
 function setUpInfo() {
   document.getElementById("infoContainer").style.display = "block"
   document.getElementById("name").innerHTML = "Name: " + name
-  document.getElementById("health").innerHTML = "Health: " + health
+  document.getElementById("health").innerHTML = "Health: " + health + "</br>"
+
+  for (i=health; i > 0; i=i-20) {
+    document.getElementById("health").innerHTML = document.getElementById("health").innerHTML + '<img src="https://img.icons8.com/material/24/000000/like.png">'
+  }
 }
 
 // Checks the answer the user gave to see if it is correct or not
@@ -86,7 +90,7 @@ function questionAnswered(answer) {
 
     inQuestion = false
     nextRound()
-  } else if(answer.toLowerCase() !== correctAnswer) {
+  } else {
     output.innerHTML =  output.innerHTML + "</br></br>" + failMessages[roundNumber]
     output.innerHTML =  output.innerHTML + "</br></br>" + "Please try again!"
 
@@ -108,7 +112,7 @@ function askQuestion() {
 function nextRound() {
   roundNumber = roundNumber + 1
 
-  if (roundNumber > 2) {
+  if (roundNumber > 2 && health > 0) {
     winningSequence()
   } else {
     output.innerHTML =  output.innerHTML + "</br></br>" + descriptions[roundNumber]
