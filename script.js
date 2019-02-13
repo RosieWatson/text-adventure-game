@@ -83,13 +83,15 @@ function questionAnswered(answer) {
 
   if (answer.toLowerCase() === correctAnswer) {
     output.innerHTML =  output.innerHTML + "</br></br>" + winMessage[roundNumber]
+
     inQuestion = false
     nextRound()
   } else if(answer.toLowerCase() !== correctAnswer) {
     output.innerHTML =  output.innerHTML + "</br></br>" + failMessages[roundNumber]
+    output.innerHTML =  output.innerHTML + "</br></br>" + "Please try again!"
+
     health = health - 20
     setUpInfo()
-    output.innerHTML =  output.innerHTML + "</br></br>" + "Please try again!"
   }
 
   qustionNumber++
@@ -118,6 +120,7 @@ function winningSequence() {
   output.innerHTML =  output.innerHTML + "</br></br>" + "Congratulations you have beat the quest and made it into the castle!"
 }
 
+// Prints the losing message for the user
 function losingSequence() {
   output.innerHTML =  output.innerHTML + "</br></br>" + "You have not manage to complete the quest... Try again later"
 }

@@ -9,9 +9,9 @@ Currently running on: http://rosiekwatson.co.uk/
 - There are a few minor mistakes left in (such as input box not clearing) to allow the students to improve upon this design.
 
 ## Todo:
-- [ ] Break into functions
-- [ ] Do comments
-- [ ] 3 questions, looping if they get it wrong
+- [X] Break into functions
+- [X] Do comments
+- [X] 3 questions
 - [ ] More options than just sneak (think of what else it could do)
 - [x] Change all to old function layout
 - [x] Change fieldsets to divs
