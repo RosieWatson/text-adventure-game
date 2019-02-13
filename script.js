@@ -61,11 +61,13 @@ function inputText() {
       questionAnswered(answer)
     } else if (answer.toLowerCase() === 'fight' || answer.toLowerCase() === 'befriend' || answer.toLowerCase() === 'jump') {
       askQuestion()
-    } else if (answer.toLowerCase() === 'sneak' || answer.toLowerCase() === 'exit') {
+    } else if (answer.toLowerCase() === 'sneak' || answer.toLowerCase() === 'ignore' || answer.toLowerCase() === 'turn around') {
       output.innerHTML =  output.innerHTML + "</br></br>" + "Thank you for playing."
     } else {
       alert('Sorry I did not understand your answer, please try again!')
     }
+
+    if (health <= 0) losingSequence()
 }
 
 // Assigns values to the player variables and shows them to the user
@@ -83,12 +85,11 @@ function questionAnswered(answer) {
     output.innerHTML =  output.innerHTML + "</br></br>" + winMessage[roundNumber]
     inQuestion = false
     nextRound()
-  } else if(answer.toLowerCase() !== correctAnswer && health > 0) {
+  } else if(answer.toLowerCase() !== correctAnswer) {
     output.innerHTML =  output.innerHTML + "</br></br>" + failMessages[roundNumber]
     health = health - 20
     setUpInfo()
-  } else {
-    // maybe out of question and show end screen?
+    output.innerHTML =  output.innerHTML + "</br></br>" + "Please try again!"
   }
 
   qustionNumber++
@@ -115,4 +116,8 @@ function nextRound() {
 // Prints the winning message for the user
 function winningSequence() {
   output.innerHTML =  output.innerHTML + "</br></br>" + "Congratulations you have beat the quest and made it into the castle!"
+}
+
+function losingSequence() {
+  output.innerHTML =  output.innerHTML + "</br></br>" + "You have not manage to complete the quest... Try again later"
 }

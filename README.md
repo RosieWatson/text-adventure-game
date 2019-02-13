@@ -26,3 +26,4 @@ Currently running on: http://rosiekwatson.co.uk/
 ### Ideas
 - [ ] Maybe use it as the 3rd option, pick a number and loop through for something? 
 - [ ] Split out optional CSS so it looks less cluttered
+- [ ] Maybe have a function per round to make it simpler and also make loop usage easier?
