@@ -89,6 +89,7 @@ function questionAnswered(answer) {
     output.innerHTML =  output.innerHTML + "</br></br>" + winMessage[roundNumber]
 
     inQuestion = false
+    qustionNumber++
     nextRound()
   } else {
     output.innerHTML =  output.innerHTML + "</br></br>" + failMessages[roundNumber]
@@ -97,8 +98,6 @@ function questionAnswered(answer) {
     health = health - 20
     setUpInfo()
   }
-
-  qustionNumber++
 }
 
 // Prints out the next question for the user
